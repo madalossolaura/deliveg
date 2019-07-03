@@ -28,6 +28,10 @@ INSERT INTO categoria (nome) VALUES ('fruta');
 
 
 
-INSERT into produto(id_categoria, nome, descricao, foto, preco, estoque) VALUES(3, 'maça', 'produto bacana e vermelho, mas pode ser verde tb', 'maça.png', 10, 400);
+INSERT into produto(id_categoria, nome, descricao, foto, preco, estoque) VALUES(3, 'maça', 'produto bacana e vermelho, mas pode ser verde tb', 'maca.jpg', 10, 400);
 INSERT into produto(id_categoria, nome, descricao, foto, preco, estoque) VALUES(3, 'morango',  'produto bacana e vermelho', 'morango.png', 15, 400);
-INSERT into produto(id_categoria, nome, descricao, foto, preco, estoque) VALUES(1, 'cebola', 'produto bacana', 'cebola.png', 4, 400);
+INSERT into produto(id_categoria, nome, descricao, foto, preco, estoque) VALUES(1, 'pimentao', 'produto bacana, pode ser vermelho, amarelo ou verde', 'pimentao.jpg', 5, 400);
+INSERT into produto(id_categoria, nome, descricao, foto, preco, estoque) VALUES(2, 'alface', 'bom pra salada', 'alface.jpg', 4, 400);
+INSERT into produto(id_categoria, nome, descricao, foto, preco, estoque) VALUES(2, 'brocolis', 'eu quero', 'brocolis.png', 8, 400);
+INSERT into produto(id_categoria, nome, descricao, foto, preco, estoque) VALUES(1, 'cebola', 'produto bacana', 'cebola.jpg', 4, 400);
+INSERT into produto(id_categoria, nome, descricao, foto, preco, estoque) VALUES(3, 'tomate', 'molho, pizza, salada', 'tomate.png', 6, 400);

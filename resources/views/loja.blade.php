@@ -50,7 +50,7 @@
           
       </div>
       <p id="precoFinal"></p> 
-      <button type="button" class="btn btn-success">Finalizar Compra</button>
+      <a type="button" class="btn btn-success" id="sendToDb" href='/pagamento'>Finalizar Compra</a>
       </div>
         </div>
       </div>
@@ -60,7 +60,7 @@
 @csrf
 <footer id='cart'>
 
-    <button  class="btn btn-success" data-toggle="modal" data-target="#modal-produto" id="buy">Comprar</button>
+    <button  class="btn btn-continuar" data-toggle="modal" data-target="#modal-produto" id="buy">Ver carrinho</button>
     <div class='cart__content'>
     <h2>Valor Total R$</h2><p id='total'></p>
     </div>

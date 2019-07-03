@@ -18,7 +18,9 @@ class CreatePedidosTable extends Migration
             $table->integer('user_id');
             $table->timestamps();
             $table->string('items');
+            $table->string('items_id');
             $table->float('total');
+            $table->string('status');
         });
     }
 

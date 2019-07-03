@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Usuario;
+use App\Pedido;
+use Illuminate\Support\Facades\Auth;
 
 class PerfilController extends Controller
 {
@@ -20,7 +22,8 @@ class PerfilController extends Controller
 
         
     public function mostrarPerfil (){
-        $usuarios = Usuario::all();         
-        return view('perfil')->with('usuarios', $usuarios);   
+        $usuarios = Usuario::all()->where('id', '=', Auth::user()->id); 
+        $pedidos = Pedido::all()->where('user_id', '=', Auth::user()->id);    
+        return view('perfil')->with('usuarios', $usuarios)->with('pedidos', $pedidos); 
     }
 }

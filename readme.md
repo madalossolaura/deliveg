@@ -11,7 +11,7 @@
 ### para contribuir
 * cria sua branch git checkout -b nome-da-branch
 * faz sua contribuição
-* git add.
+* git add .
 * git commit -m "explica o que fez"
 * git pull origin master
 * git push origin nome-da-sua-branch

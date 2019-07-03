@@ -1,0 +1,21 @@
+
+
+#pagamento {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #fff;
+    padding:6%;
+    margin:100px auto 100px;
+}
+
+#pagar {
+    width: 100%;
+}
+
+#quant {
+    text-align: center;
+}
+
+#expMonth {
+    margin: 0;
+}

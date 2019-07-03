@@ -12,30 +12,30 @@
         <div id="navbarSupportedContent" class="navbar-right collapse navbar-collapse">
             <ul class="navbar-nav" >
                 <li class="nav-item navbar-notlogged">
-                    <a class="link-green" href="/loja" title="Loja">Loja</a>
+                    <a class="link-green" href="/loja" title="Loja">loja</a>
                 </li>
+                
                 <li class="nav-item navbar-notlogged">
-                    <a class="link-green" href="/perfil">Perfil</a>
-                </li>
-                <li class="nav-item navbar-notlogged">
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="link-green dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
+                    <li class="nav-item dropdown">
+                        <a id="navbarDropdown" class="link-green dropdown-toggle" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            {{ Auth::user()->name }} <span class="caret"></span>
+                        </a>
+                       
 
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item link-green" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('logout') }}
-                                    </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item link-green" href="/perfil">perfil</a>
+                            <a class="dropdown-item link-green" href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                                                document.getElementById('logout-form').submit();">
+                                {{ __('logout') }}
+                            </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                @csrf
+                            </form>
 
-
+                        </div>
+                     
 
 
                 </li>
